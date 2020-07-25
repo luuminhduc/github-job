@@ -3,6 +3,7 @@ $light-color: #EAF2FA;
 $blue-color: #78A3F5;
 $red-color: #E06978;
 $text-color: #2A3746;
+$dark-color: #171717;
 
 *{
     box-sizing: border-box;
@@ -15,7 +16,7 @@ body{
     overflow-x: hidden;
     text-align: center;
     padding-top: 50px;
-    background-color: $light-color;
+    background-color: $dark-color;
 }
 
 .input-container{
@@ -29,7 +30,7 @@ body{
     input{
         width: 50%;
         margin: 0 30px;
-        background-color: #fff;
+        background-color: lighten($color: $dark-color, $amount: 3%);
         padding: 17px;
         border: none;
         font-family: $font-stack;
@@ -83,7 +84,7 @@ body{
     .card{
         width: 100%;
         margin: 40px auto;
-        background-color: #fff;
+        background-color: lighten($color: $dark-color, $amount: 3%);
         padding: 20px;
         text-align: left;
         display: flex;
@@ -91,7 +92,7 @@ body{
         justify-content: flex-start;
         align-items: flex-start;
         border-radius: 5px;
-        box-shadow: 0 2px 4px lighten($color: $light-color, $amount: 5%);
+        box-shadow: 0 2px 4px lighten($color: $dark-color, $amount: 5%);
 
         img{
             width: 100px;
