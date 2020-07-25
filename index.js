@@ -101,3 +101,5 @@ locationEl.addEventListener('input', (e) => {
         }
     })
 })
+
+console.log('a');
